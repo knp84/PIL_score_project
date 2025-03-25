@@ -19,7 +19,7 @@ for i in range(len(s) - 1):
 avr_score = sum_score / count_score
 print(avr_score)
 
-question = input('До какоко числа следует посчитать?(Введите цифру)\n')
+question = input('До какого числа следует посчитать?(Введите цифру)\n')
 
 if question == '4':
     if avr_score >= 3.5:
@@ -47,3 +47,4 @@ elif question == '5':
             count_score_5_2 += 1
             avr_score_5_2 = sum_score_5_2 / (count_score_5_2 + count_score)
         print(f'До {avr_score_5_2} вам осталось {count_score_5_2} пятерок')
+#In future I'm plannig create a tg bot with this functionality
