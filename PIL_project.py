@@ -7,6 +7,16 @@ def ocr_core(filename):
     text = pytesseract.image_to_string(Image.open(filename))  
     return text
 
+def calc_grades(avr_score, count_score, question):
+    i = 1
+    sum_score = 0
+    for i in range(i):
+        while avr_score < float(question) - 0.5:
+                sum_score += 6 - i
+                count_score += 1
+                avr_score = sum_score / (count_score + count_score)
+        if question - round(avr_score) > 0:
+            i += 1
 s = ocr_core('score.jpg')
 
 sum_score = 0
